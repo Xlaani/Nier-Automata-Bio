@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Oswaldregular;  */
+  padding: 0;
+  font-family: Playfair-italic;
+}
+
+body {
+  background: url(../img/Background2b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+/* div padre */
+
+.hyper-padre {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  position: relative;
+}
+/* -------------------------------- */
+
+/* barra de iconos */
+
+.nav-icon {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(33, 32, 32);
+  border-radius: 0px 0px 10px 0px;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  gap: 2em;
+  padding: 10px;
+}
+.nav-icon a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  transition-duration: 0.6s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-icon a:hover {
+  color: aliceblue;
+}
+/* -------------------------------- */
+
+/* imagen de presentacion y su informacion */
+
+.div-container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
+  margin-top: 40px;
+}
+.div-img-2b {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px 0;
+  background: rgb(33, 32, 32);
+  border: 1px solid black;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.img2b {
+  object-fit: cover;
+  object-position: top;
+  width: 250px;
+  height: 250px;
+}
+
+.nombre2b {
+  margin-top: -60px;
+}
+
+.frase {
+  margin-top: -25px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.history2b {
+  margin: 40px 100px 40px 100px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+/* ------------------------------------------- */
+
+/* SECCION DE INFORMACION */
+
+/* div de armas */
+
+.armas-pordefecto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.div-armas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5em;
+}
+.div-card-arma {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  overflow: hidden;
+}
+.content-img-arma {
+  background: rgb(33, 32, 32);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.9;
+}
+.content-img-arma:hover .img-arma {
+  transform: scale(0.8);
+}
+.img-arma {
+  width: 300px;
+  height: 150px;
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.p-arma {
+  text-align: justify;
+  word-wrap: break-word;
+  height: 65px;
+}
+
+/* div de relaciones personajes */
+
+.relaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5em;
+  flex-wrap: wrap;
+}
+
+.personajes-relacionados {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.img-personaje {
+  height: 350px;
+  width: 200px;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.titulo-personaje {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-personaje {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 240px;
+  background: rgb(33, 32, 32);
+  box-shadow: 0 0 6px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.p-personaje {
+  width: 240px;
+  height: 45px;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+.father-content-personaje {
+  margin: 0px 25px;
+}
+.armas {
+  margin: 0px 25px;
+}
+/* .content-personaje:hover{
+transform: scale(1.1);
+
+} */
+
+.father-content-personaje:hover .img-personaje {
+  transform: scale(0.9);
+}
+/* h2{
+  font-family: Oswaldregular
+} */
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald/static/Oswald-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Oswaldregular;
+  src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair-italic;
+  src: url(../fonts/Playfair/static/PlayfairDisplay-SemiBoldItalic.ttf);
+}
+
+/* @font-face {
+      font-family: Playfair;
+      src: url(../fonts/Playfair/static/PlayfairDisplay-SemiBold.ttf );
+    } */
+
+/* .hyper-padre {
+      animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  } */
+
+.hyper-padre {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .history2b {
+    margin: 40px 40px 40px 40px;
+  }
+}
