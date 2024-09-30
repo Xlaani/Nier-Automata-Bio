@@ -237,11 +237,11 @@ transform: scale(1.1);
   font-family: Oswaldregular;
   src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
 }
-
 @font-face {
   font-family: Playfair-italic;
   src: url(../fonts/Playfair/static/PlayfairDisplay-SemiBoldItalic.ttf);
 }
+
 
 /* @font-face {
       font-family: Playfair;
